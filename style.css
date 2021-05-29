@@ -5,10 +5,12 @@
     --primary-color: #34D399;
     --dark-grey: #6B7280;
     --off-white: #F4F4F5;
+    --dark-green: #10B981;
 }
 
 body{
     font-family: 'Inter','sans-serif';
+    margin: 0px;
 }
 
 hr{
@@ -91,6 +93,7 @@ hr{
 }
 
 .hero .hero-heading{
+    text-align: center;
     padding-top: 1rem;
     color: var(--dark-grey);
 }
@@ -106,4 +109,20 @@ section h1{
 
 .ow{
     background-color: var(--off-white);
+}
+
+footer{
+    background-color: var(--dark-green);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top-right-radius: 1rem;
+}
+
+footer .social-links{
+    padding-inline-start: 0px;
+}
+
+footer .link{
+    color: white;
 }
