@@ -37,12 +37,14 @@ hr{
     color: white;
     background-color: var(--primary-color);
     border-radius: 0.5rem;
+    transition: 0.3s;
 }
 
 .link-secondary{
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
+    transition: 0.3s;
 }
 
 /* lists */
@@ -129,5 +131,72 @@ footer .footer-header{
 }
 
 footer .link{
+    color: white;
+}
+
+/* blog-section */
+ul{
+    padding-inline-start: 0px;
+}
+.container-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+.container-flex2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blog-imgs{
+    height: 30vh;
+    width: 30vh;
+    max-height: 250px;
+    max-width: 250px;
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 10px;
+}
+
+.blog-link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.blog-title{
+    margin: 0rem 1rem;
+}
+
+.blog-card{
+    background-color: #DCFCE7;
+    border-radius: 10px;
+    margin: 0px 1rem;
+}
+
+/* spacing */
+
+.mg-b{
+    margin-bottom: 1.7rem;
+}
+
+.mg-t{
+    margin-top: 3.5rem;
+}
+
+/* hover effects */
+
+.link-primary:hover{
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.link-secondary:hover{
+    background-color: var(--primary-color);
     color: white;
 }
