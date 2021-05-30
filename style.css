@@ -28,6 +28,7 @@ hr{
 }
 
 /* links */
+
 .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -35,6 +36,7 @@ hr{
 
 .link-primary{
     color: white;
+    border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     transition: 0.3s;
@@ -194,9 +196,36 @@ ul{
 .link-primary:hover{
     background-color: white;
     color: var(--primary-color);
-    border: 1px solid var(--primary-color);
 }
 .link-secondary:hover{
     background-color: var(--primary-color);
     color: white;
 }
+
+
+.underline{
+    position: relative;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .underline:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+
+
