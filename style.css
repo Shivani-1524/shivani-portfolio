@@ -198,6 +198,11 @@ ul {
   border-radius: 10px;
   margin: 0px 1rem;
 }
+div.call-to-action-blog {
+  margin-left: 20px;
+  margin-top: 20px;
+  height: auto;
+}
 
 /* spacing */
 
