@@ -107,7 +107,7 @@ hr {
 .hero .cover-img {
   width: 80%;
   height: 300px;
-  min-width: 350px;
+  min-width: 280px;
   display: block;
   margin: auto;
   margin-top: 0px;
@@ -185,7 +185,7 @@ ul {
 .blog-link {
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -199,9 +199,21 @@ ul {
   margin: 0px 1rem;
 }
 div.call-to-action-blog {
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 16px;
+  margin-right: 7px;
+  margin-top: 10px;
   height: auto;
+}
+.blog-cta-link {
+  text-decoration: none;
+  color: #10b981;
+  font-weight: bold;
+}
+.blog-cta-link.decor {
+  text-decoration: underline;
+}
+.blog-content {
+  padding-bottom: 30px;
 }
 
 /* spacing */
@@ -242,14 +254,21 @@ div.call-to-action-blog {
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.blog-title {
-  text-align: center;
-}
-
 @media (hover: hover) and (pointer: fine) {
   .underline:hover::before {
     left: 0;
     right: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .blog-imgs {
+    width: 20%;
+    min-height: auto;
+  }
+
+  .hero .cover-img {
     width: 100%;
   }
 }
